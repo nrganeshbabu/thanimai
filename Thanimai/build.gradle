@@ -1,0 +1,19 @@
+apply plugin: 'java'
+version = '0.9.1'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+task compile(type: JavaCompile)
+
+compile {
+    source = ['src/main/java']
+}
+
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Building from Gradle',
+                   'Implementation-Version': version,
+                   'Main-Class': 'v.VMain'
+    }
+}
