@@ -16,5 +16,5 @@ jar {
                    'Implementation-Version': version,
                    'Main-Class': 'v.VMain'
     }
-    destinationDir = file('/home/groot/gradle')
+    destinationDir = file('/home/groot/jenkins/build')
 }
